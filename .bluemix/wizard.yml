@@ -38,6 +38,13 @@ steps:
           - type: replace-service
             service: githubconsolidated
             service_label: repo
+            repo_url: 'https://github.com/open-toolchain/hello-containers'
+            source_repo_url: 'https://github.com/open-toolchain/hello-containers'
+            type: 'clone'
+            has_issues: true
+            enable_traceability: true
+            legal: true
+            source_provider: githubconsolidated
       - condition:
           any:
             - parameter: source_provider
@@ -46,6 +53,14 @@ steps:
           - type: replace-service
             service: gitlab
             service_label: repo
+            parameters:
+              repo_url: 'https://github.com/open-toolchain/hello-containers'
+              source_repo_url: 'https://github.com/open-toolchain/hello-containers'
+              type: 'clone'
+              has_issues: true
+              enable_traceability: true
+              legal: true
+              source_provider: gitlab
       - condition:
           any:
             - parameter: source_provider
@@ -71,6 +86,14 @@ steps:
           - type: replace-service
             service: github_integrated
             service_label: repo
+            parameters:
+              repo_url: 'https://github.com/open-toolchain/hello-containers'
+              source_repo_url: 'https://github.com/open-toolchain/hello-containers'
+              type: 'clone'
+              has_issues: true
+              enable_traceability: true
+              legal: true
+              source_provider: github_integrated
   - name: vault
     label: Secrets Management
     form: 
