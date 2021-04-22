@@ -69,5 +69,37 @@
             "name": "GitHub Enterprise Whitewater"
         }
     ]
+  },
+  {
+    "type": "propertyList",
+    "key": "source_provider",
+    "title": "Table Test",
+    "properties": [
+      {
+        "name": "text1",
+        "type": "TEXT",
+        "value": "textValue"
+      },
+      {
+        "name": "secure1",
+        "type": "SECURE",
+        "value": "secureValue"
+      },
+      {
+        "name": "integration1",
+        "path": "parameters.name",
+        "type": "INTEGRATION",
+        "value": ""
+      },
+      {
+        "name": "enum1",
+        "type": "SINGLE_SELECT",
+        "value": {
+            "enumValue1": true,
+            "enumValue2": false,
+            "enumValue3": false
+        }
+      }
+    ]
   }]
 }
