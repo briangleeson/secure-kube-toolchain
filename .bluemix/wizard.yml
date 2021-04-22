@@ -6,6 +6,9 @@ welcome:
   description: 
       $ref: "#/messages/wizard.welcome.description"
 steps:
+  - name: propertytable
+    title: "Property Table"
+    form: wizard_property_table
   - name: app
     title:
       $ref: "#/messages/wizard.step.application.title"
@@ -70,6 +73,10 @@ steps:
     form: wizard_summary
 
 form:
+  wizard_property_table:
+    schema:
+      $ref: wizard_property_table.json
+
   wizard_app:
     schema:
       $ref: wizard_app.json

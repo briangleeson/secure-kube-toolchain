@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "messages": {
+    "$i18n": "locales.yml"
+  },
+  "title": "Property Table",
+  "description": "Table Propety Test",
+  "longDescription": "Table Propety Test",
+  "type": "object",
+  "form": [
+    {
+      "type": "propertylist",
+      "title": "Table Test",
+      "properties": [
+        {
+          "name": "text1",
+          "type": "TEXT",
+          "value": "textValue"
+        },
+        {
+          "name": "secure1",
+          "type": "SECURE",
+          "value": "secureValue"
+        },
+        {
+          "name": "integration1",
+          "path": "parameters.name",
+          "type": "INTEGRATION",
+          "value": ""
+        },
+        {
+          "name": "enum1",
+          "type": "SINGLE_SELECT",
+          "value": {
+              "enumValue1": true,
+              "enumValue2": false,
+              "enumValue3": false
+          }
+        }
+      ]
+    }
+  ]
+}
