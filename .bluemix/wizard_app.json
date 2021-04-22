@@ -71,7 +71,7 @@
     ]
   },
   {
-    "type": "propertyList",
+    "type": "propertylist",
     "key": "source_provider",
     "title": "Table Test",
     "properties": [
