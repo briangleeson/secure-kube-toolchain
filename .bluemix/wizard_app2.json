@@ -23,6 +23,14 @@
           "value": "service-now"
         }
       ]
+    },
+    "solo-tile": {
+      "type": "string",
+      "enum": [{
+          "name": "Solo tile test name",
+          "value": "solotile"
+        }
+      ]
     }
   },
   "form": [{
@@ -38,6 +46,13 @@
   }, {
     "type": "tilegroup",
     "key": "change-management",
+    "display": {
+      "showLabel": true,
+      "orientation": "vertical"
+    }
+  }, {
+    "type": "tilegroup",
+    "key": "solo-tile",
     "display": {
       "showLabel": true,
       "orientation": "vertical"
