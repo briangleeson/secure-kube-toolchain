@@ -12,7 +12,19 @@
   },
   "type": "object",
   "properties": {
-    "change-management": {
+    "change-management1": {
+      "type": "string",
+      "enum": [{
+          "name": "Gitlab repo issues and tracking",
+          "value": "gitlab"
+        },
+        {
+          "name": "Service now change request management",
+          "value": "service-now"
+        }
+      ]
+    },
+    "change-management2": {
       "type": "string",
       "enum": [{
           "name": "Gitlab repo issues and tracking",
@@ -38,14 +50,14 @@
     "text": "Test text info"
   }, {
     "type": "tilegroup",
-    "key": "change-management",
+    "key": "change-management1",
     "display": {
       "showLabel": false,
       "orientation": "horizontal"
     }
   }, {
     "type": "tilegroup",
-    "key": "change-management",
+    "key": "change-management2",
     "display": {
       "showLabel": true,
       "orientation": "vertical"
